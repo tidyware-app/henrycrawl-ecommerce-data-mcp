@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.tidyware-app/henrycrawl-ecommerce-data-mcp",
+  "title": "HenryCrawl E-commerce Data MCP",
+  "description": "Live Amazon, eBay, 1688/AliExpress and Rakuten product data. $19/mo license key.",
+  "version": "1.0.0",
+  "websiteUrl": "https://github.com/tidyware-app/henrycrawl-ecommerce-data-mcp",
+  "repository": {
+    "url": "https://github.com/tidyware-app/henrycrawl-ecommerce-data-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://henrycrawl-ecommerce-mcp.henrycrawl.workers.dev/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Your HenryCrawl license key as 'Bearer <key>'. Buy at https://buy.polar.sh/polar_cl_tKZC0cGfoiqq7ub3jwCUZwIVUKzoJmAshlRrg1wyMbh",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
